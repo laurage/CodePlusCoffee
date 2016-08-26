@@ -24,3 +24,6 @@ gem 'font-awesome-sass'
 # for heroku deploy
 gem 'rack-contrib'
 gem 'puma'
+
+# meta-tags
+gem 'middleman-meta-tags'

@@ -20,3 +20,7 @@ gem 'middleman-deploy', '~> 1.0'
 gem 'jquery-middleman'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+
+# for heroku deploy
+gem 'rack-contrib'
+gem 'puma'

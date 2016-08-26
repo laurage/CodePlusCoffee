@@ -1,5 +1,6 @@
-<p id="navbar_btn_process">Process</p>
+<% list_buttons = ["solution", "philo", "process", "about", "contact"] %>
 
-<script>
 
-</script>
+<% list_buttons.each do |button| %>
+  <button id=<%="navbar_btn_#{button}"%>><%=button.capitalize%></button>
+<% end %>

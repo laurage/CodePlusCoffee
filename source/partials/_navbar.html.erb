@@ -1,6 +1,12 @@
-<% list_buttons = ["solution", "philo", "process", "about", "contact"] %>
+<% list_name_buttons = ["have a coffee with us","what?", "how?", "team", "contact"] %>
 
+<% list_buttons = ["solution","process", "philo", "about", "contact"] %>
 
-<% list_buttons.each do |button| %>
-  <button id=<%="navbar_btn_#{button}"%>><%=button.capitalize%></button>
-<% end %>
+<% button_number = 0 %>
+
+<div class="footer-navbar-container navbar-fixed flex-end">
+  <% list_buttons.each do |button| %>
+    <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
+    <% button_number += 1 %>
+  <% end %>
+</div>

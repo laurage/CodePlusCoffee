@@ -1,11 +1,55 @@
-<h1 id="title_solution">SOLUTION</h1>
+<div class="full-height-page" id="title_solution">
+    <div class="row">
+      <div class="col-xs-9">
+        <div class="solution">
+          <h1>Solid projects start </br>with
+          a good discussion</h1>
+
+          <p>80% OF WEB DEVELOPMENT PROJECTS FAIL BECAUSE OF POOR PROJECT DEFINITION.</p>
+
+          <p>TOUS NOS PROJETS COMMENCENT AUTOUR D’UN CAFÉ, TEMPS AU COURS DUQUEL
+          NOUS <span class="highlight">DÉFINISSONS ENSEMBLE LES BESOINS DE VOTRE PROJET.</span></p>
+
+          <p>PAR LA SUITE, NOUS CONTINUONS A VOUS ACCOMPAGNER PAS À PAS ET <span class="highlight">RÉALISONS
+          VOTRE PROJET.</span></p>
+
+          <h2 class="text-center">RENCONTRONS NOUS AUTOUR D’UN CAFÉ</h2>
+
+          <p class="text-center"><a class="btn btn-primary bold" data-toggle="modal" data-target="#myModal" role="button">PRENEZ RDV - 2H, GRATUIT</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-<p>Ensemble, définition précise de votre projet</p>
-
-<i class="fa fa-arrow-right" aria-hidden="true"></i>
-
-<p>Accompagnement dans la réalisation de votre projet.</p>
-
-<p class= "btn btn-danger"><%= link_to "Définissons ensemble votre besoin - rdv 2h gratuit", "#" %></p>
-
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Discutons de votre projet</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+          <label for="msg">Parlez-nous de votre projet en quelques lignes:</label>
+          <textarea id="msg" name="user_message"></textarea>
+          <label for="name">Téléphone:</label>
+          <input type="text" id="name" name="user_name" />
+          <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail" />
+          <p>Nous vous recontacterons dès que possible afin de discuter plus en détail de votre projet.</p>
+          <p>A l'issue de ce rapide entretien, nous conviendrons ensemble d'une date pour discuter pendant 2 heures de votre projet, gratuitement.</p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Réservez un rendez-vous</button>
+      </div>
+    </div>
+  </div>
+</div>

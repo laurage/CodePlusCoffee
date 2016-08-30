@@ -18,7 +18,7 @@ $headings-font-family:    $header-font;
 //
 $font-size-h1:            floor(($font-size-base * 3));
 $font-size-h2:            floor(($font-size-base * 1.7));
-$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h3:            floor(($font-size-base * 1.7));
 $font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
 
 

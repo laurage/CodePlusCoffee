@@ -13,10 +13,43 @@
           <p>PAR LA SUITE, NOUS CONTINUONS A VOUS ACCOMPAGNER PAS À PAS ET <span class="highlight">RÉALISONS
           VOTRE PROJET.</span></p>
 
-          <h2>RENCONTRONS NOUS AUTOUR D’UN CAFÉ</h2>
+          <h2 class="text-center">RENCONTRONS NOUS AUTOUR D’UN CAFÉ</h2>
 
-          <p class= "btn btn-primary"><%= link_to "PRENEZ RDV - 2H, GRATUIT", "#" %></p>
+          <p class="text-center"><a class="btn btn-primary bold" data-toggle="modal" data-target="#myModal" role="button">PRENEZ RDV - 2H, GRATUIT</a></p>
         </div>
       </div>
     </div>
   </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Discutons de votre projet</h4>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name" />
+          <label for="msg">Parlez-nous de votre projet en quelques lignes:</label>
+          <textarea id="msg" name="user_message"></textarea>
+          <label for="name">Téléphone:</label>
+          <input type="text" id="name" name="user_name" />
+          <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_mail" />
+          <p>Nous vous recontacterons dès que possible afin de discuter plus en détail de votre projet.</p>
+          <p>A l'issue de ce rapide entretien, nous conviendrons ensemble d'une date pour discuter pendant 2 heures de votre projet, gratuitement.</p>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary">Réservez un rendez-vous</button>
+      </div>
+    </div>
+  </div>
+</div>

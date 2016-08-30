@@ -4,14 +4,32 @@
  * ------------------------------------- */
 
 // General style
+$body-bg:                 $background-color;
+
 $font-family-sans-serif:  $base-font;
-$body-bg:                 lighten(#000, 93.5%);
+$text-color: $main-text-color;
+
 $font-size-base:          $base-size;
 $line-height-base:        $base-height;
 $headings-font-family:    $header-font;
 
+// Header's size
+// floor((14px * 2.6)) =~36px
+//
+$font-size-h1:            floor(($font-size-base * 3));
+$font-size-h2:            floor(($font-size-base * 1.7));
+$font-size-h3:            ceil(($font-size-base * 1.7)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+
+
+$link-color:            white;
+$link-hover-color:      black;
+$link-hover-decoration: none;
+
+//$grid-gutter-width:         30px;
+
 // Semantic color scheme
-$brand-primary:   $blue;
+$brand-primary:   $highlight-color-1;
 $brand-success:   $green;
 $brand-info:      $yellow;
 $brand-danger:    $red;
@@ -21,3 +39,6 @@ $brand-warning:   $orange;
 $border-radius-base:  2px;
 $border-radius-large: 2px;
 $border-radius-small: 2px;
+
+
+

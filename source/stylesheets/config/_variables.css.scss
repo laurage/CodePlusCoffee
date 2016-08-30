@@ -3,33 +3,45 @@
  * ------------------------------------- */
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Montserrat", "sans-serif";
 
 // Local fonts (uncomment following lines)
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@font-face {
+   font-family: "BigNoodleTitling";
+   src: font-url('BigNoodleTitling.eot');
+   src: font-url('BigNoodleTitling.eot?#iefix') format('embedded-opentype'),
+        font-url('BigNoodleTitling.woff') format('woff'),
+        font-url('BigNoodleTitling.ttf') format('truetype')
+ }
+
+// Define fonts to use:
+$base-font: "Open Sans", "Helvetica", "sans-serif";
+$header-font: "BigNoodleTitling", "Montserrat", "sans-serif";
 
 // Font-size and line-height
 $base-size: 16px;
 $base-height: 1.4;
 
+$header-size: 16px;
+$header-height: 1.4;
+
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
 // Scheme
-$red: #EE5F5B;
+$highlight-color-1: #D8636A;
+$highlight-color-1-lighter: #D5C0B8;
+$highlight-color-2: #2E3944;
+$main-text-color: #231F20;
+$navbar-color: #C9C9C9;
+$background-color: #E6E7E8;
+
+// These colours are not part of the scheme:
 $blue: #469AE0;
 $yellow: #FDB631;
 $orange: #E67E22;
 $green: #32B796;
 $purple: #6452BD;
+$red: #F00;
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222
@@ -37,3 +49,4 @@ $gray-dark:    lighten(#000, 20%);   // #333
 $gray:         lighten(#000, 33.5%); // #555
 $gray-light:   lighten(#000, 46.7%); // #777
 $gray-lighter: lighten(#000, 93.5%); // #eee
+

@@ -1,6 +1,10 @@
+<% list_name_buttons = ["have a coffee with us", "what?", "how?", "team", "contact"] %>
+
 <% list_buttons = ["solution", "philo", "process", "about", "contact"] %>
 
+<% button_number = 0 %>
 
 <% list_buttons.each do |button| %>
-  <button id=<%="navbar_btn_#{button}"%>><%=button.capitalize%></button>
+  <button id=<%="navbar_btn_#{button}"%>><%=list_name_buttons[button_number].capitalize%></button>
+  <% button_number += 1 %>
 <% end %>

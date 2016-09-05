@@ -1,38 +1,66 @@
 $( document ).ready(function() {
 
-// Change color image when hovers
-  $(function() {
-    $(".clickable")
-        .mouseover(function() {
-            var src = "/images/cercle-arrow-lighter.png";
-            $(this).attr("src", src);
-        })
-        .mouseout(function() {
-            var src = "/images/cercle-arrow.png";
-            $(this).attr("src", src);
-        });
-  });
+  changeColorOnHover("arrow");
+  changeSymbolOnClick();
 
-  //Change picto when clicks (=when reveals text)
-
-  $(function() {
+  function changeSymbolOnClick()  {
     var clicked = false;
-    $(".clickable").click(function() {
+
+    $(".process-essential").click(function() {
        clicked = !(clicked);
-      console.log(clicked);
+
+      if(clicked == true){
+        var src = "/images/cercle-minus-darker.png";
+        $(this).attr("src", src);
+        changeColorOnHover("minus");
+      }
+
+      if(clicked == false){
+        var src = "/images/cercle-arrow-darker.png";
+        $(this).attr("src", src);
+        changeColorOnHover("arrow");
+      }
+
+    });
+
+    $(".process-option").click(function() {
+       clicked = !(clicked);
 
       if(clicked == true){
         var src = "/images/cercle-minus.png";
         $(this).attr("src", src);
+        changeColorOnHover("minus");
       }
 
       if(clicked == false){
         var src = "/images/cercle-arrow.png";
         $(this).attr("src", src);
+        changeColorOnHover("arrow");
       }
     });
+  };
 
-  });
+  function changeColorOnHover(symbol) {
+    $(".process-essential")
+        .mouseover(function() {
+            var src = "/images/cercle-"+symbol+"-darker.png";
+            $(this).attr("src", src);
+        })
+        .mouseout(function() {
+            var src = "/images/cercle-"+symbol+".png";
+            $(this).attr("src", src);
+        });
+
+    $(".process-option")
+        .mouseover(function() {
+            var src = "/images/cercle-"+symbol+".png";
+            $(this).attr("src", src);
+        })
+        .mouseout(function() {
+            var src = "/images/cercle-"+symbol+"-lighter.png";
+            $(this).attr("src", src);
+        });
+  };
 
 //JS version:
   // var clicked = false;

@@ -5,8 +5,14 @@
 <% button_number = 0 %>
 
 <div class="footer-navbar-container navbar-fixed flex-end">
-  <% list_buttons.each do |button| %>
-    <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
-    <% button_number += 1 %>
-  <% end %>
+  <div class="device-small">
+
+  </div>
+
+  <div class="device-large">
+    <% list_buttons.each do |button| %>
+      <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
+      <% button_number += 1 %>
+    <% end %>
+  </div>
 </div>

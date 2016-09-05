@@ -48,7 +48,7 @@ h3{
   display: flex;
   align-items: center;
 
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .horizontal-center{
@@ -56,8 +56,7 @@ h3{
 }
 
 .container-padding { //impossible to change bootstrap padding for container-fluid
-  padding-left: 100px;
-  padding-right: 100px;
+  padding:0px;
 }
 
 .process-detail{
@@ -97,10 +96,34 @@ h3{
 }
 
 .footer-navbar-container{
-  background-color: #C9C9C9;
+  background-color: $navbar-footer-color;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   font-weight: 700;
   font-size   : 0.8em;
+}
+
+.clickable{
+  cursor      : pointer;
+}
+
+.padding-left-19px{
+  padding-left: 19px; //corresponds to offset buttons other lines
+}
+
+.process-option{
+  color:$highlight-color-1-lighter;
+}
+
+.background-color-strong{
+  background-color: $background-color-strong;
+
+  h2{
+    color:$highlight-color-strong;
+  }
+}
+
+.highlight-color-strong{
+  color: $highlight-color-strong;
 }

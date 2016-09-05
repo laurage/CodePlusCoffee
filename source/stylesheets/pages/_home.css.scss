@@ -19,10 +19,11 @@ h3{
 
 .landingpage{
   h1{
-    font-size: 130px;
+    font-size: 80px;
   }
   h2{
-    font-size: 19px;
+    font-size: 10px;
+    padding-left: 6px; //magic number: to align h1 & h2
     font-family: $font-family-sans-serif;
     color: $main-text-color;
   }
@@ -31,6 +32,55 @@ h3{
     margin-top:31px;
   }
 }
+
+.landingpage{
+  @media (min-width: 0px) {
+     //p{background-color: red;}
+     .device-large{display:none;}
+     .device-small{display:block;}
+
+     h1{
+       font-size: 130px; font-size: 25vw;
+     }
+     h2{
+       font-size: 19px; font-size: 4.3vw;
+     }
+  }
+
+  @media (min-width: 600px) {
+    //p{background-color: green;}
+    h1{
+      font-size: 130px; font-size: 9vw;
+    }
+    h2{
+      font-size: 19px; font-size: 1.3vw;
+    }
+    .device-large{display:block;}
+    .device-small{display:none;}
+  }
+
+}
+
+
+
+
+//Landing page
+
+canvas {
+  vertical-align: top;
+
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+}
+
+#contenu {
+  position:relative;
+  z-index:2;
+}
+
+//
 
 .solution{
   h2{

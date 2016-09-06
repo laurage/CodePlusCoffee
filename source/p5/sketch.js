@@ -14,7 +14,7 @@ var next = 0;
 function preload() {
 
   for (var i = 0; i<=number_img-1; i++){
-    img_list[i] = loadImage("assets/cartoon"+i+".png");
+    img_list[i] = loadImage("../images/cartoon"+i+".png");
   }
 }
 
@@ -22,8 +22,8 @@ function setup() {
   // Stretches canvas to full window
   createCanvas(1920, 948);
 
-  originalCanvasWidth = 1920;//windowWidth;
-  originalCanvasHeight = 948;//windowHeight;
+  originalCanvasWidth = 1920;
+  originalCanvasHeight = 948;
 
 
 
@@ -31,10 +31,12 @@ function setup() {
 }
 
 // To resize canvas
-//function windowResized() { resizeCanvas(windowWidth, windowHeight); }
+function windowResized() { resizeCanvas(windowWidth, windowHeight); }
 
 function draw() {
-    backgound(255,0,0);
+  //background(230,231,232);
+  background(255,0,0);
+
     displayImage();
 
     // Timer

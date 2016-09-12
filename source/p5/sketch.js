@@ -1,5 +1,6 @@
 var image_x = 956;
 var image_y = 253;
+var list_image_x = [1100, 1150, 1150, 1180];
 var number_img = 4;
 var originalCanvasWidth;
 var originalCanvasHeight;
@@ -7,7 +8,7 @@ var randomShapes =[];
 
 var img_list =[];
 
-var i = 0;
+var increment = 0;
 
 var xoff;
 var yoff;
@@ -33,7 +34,6 @@ function setup() {
 
   for(var i=0; i<=50; i++){
     var shapeNumber = int(random(2));
-    console.log(shapeNumber);
     randomShape[i] = new randomShape(random(0,width),random(0,height),random(0,10000),random(0,10000),shapeNumber);
     randomShape[i].init();
   }
@@ -45,16 +45,18 @@ function windowResized() { resizeCanvas(windowWidth, windowHeight); }
 function draw() {
   background(230,231,232);
   //background(255,0,0);
-
+console.log(increment);
     displayImage();
+    //console.log(next);
 
     // Timer
     if (millis() > next) {
+      console.log("YO");
+      increment++;
+      console.log(increment);
 
-      i++;
-
-      if (i==number_img){
-        i = 0;
+      if (increment==number_img){
+        increment = 0;
       }
 
       next = millis() + 2000;
@@ -75,7 +77,8 @@ function draw() {
 }
 
 function displayImage(){
-  image(img_list[i], scalingPosition(img_list[i]).x, scalingPosition(img_list[i]).y, scaling(img_list[i]).x, scaling(img_list[i]).y);
+  image(img_list[increment], scalingPosition(img_list[increment]).x, scalingPosition(img_list[increment]).y, scaling(img_list[increment]).x, scaling(img_list[increment]).y);
+//console.log(increment);
 }
 
 // Scales images width & height proportionnally to the widht of the screen
@@ -89,8 +92,8 @@ function scaling(img){
 }
 
 function scalingPosition(img){
-  scaled_img_x = (windowWidth*image_x)/originalCanvasWidth;
-  scaled_img_y = (scaled_img_x*image_y)/image_x;
+  scaled_img_x = (windowWidth*list_image_x[increment])/originalCanvasWidth;
+  scaled_img_y = (scaled_img_x*image_y)/list_image_x[increment];
 
   var img_position = createVector(scaled_img_x,scaled_img_y);
   return img_position;
@@ -102,6 +105,7 @@ function randomShape(x,y,xoff,yoff,shapeNumber){
   this.xoff = xoff;
   this.yoff = yoff;
   this.shapeNumber = shapeNumber;
+  this.direction = 1;
 
 
   this.init = function(){
@@ -141,8 +145,11 @@ function randomShape(x,y,xoff,yoff,shapeNumber){
   this.update = function(){
     var nX = noise(this.xoff);
     var randX = map(nX,0,1,-1,1);
-    this.pos.x = this.pos.x + randX;
+    this.pos.x = (this.pos.x + randX)*this.direction;
     this.xoff = this.xoff + 0.001;
+
+    //console.log(direction);
+
 
     var nY = noise(this.yoff);
     var randY = map(nY,0,1,-1,1);

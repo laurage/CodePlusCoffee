@@ -1,10 +1,12 @@
-$( document ).ready(function() {
+// The option arrow doesn't transform into a minus when mouseout.
 
+$( document ).ready(function() {
+  var clicked = false;
   changeColorOnHover("arrow");
   changeSymbolOnClick();
 
   function changeSymbolOnClick()  {
-    var clicked = false;
+
 
     $(".process-essential").click(function() {
        clicked = !(clicked);
@@ -23,21 +25,25 @@ $( document ).ready(function() {
 
     });
 
-    $(".process-option").click(function() {
-       clicked = !(clicked);
+    // $(".process-option").click(function() {
+    //    clicked = !(clicked);
 
-      if(clicked == true){
-        var src = "/images/cercle-minus.png";
-        $(this).attr("src", src);
-        changeColorOnHover("minus");
-      }
+    //   if(clicked == true){
+    //     var src = "/images/cercle-minus.png";
+    //     $(this).attr("src", src);
+    //     changeColorOnHover("minus");
 
-      if(clicked == false){
-        var src = "/images/cercle-arrow.png";
-        $(this).attr("src", src);
-        changeColorOnHover("arrow");
-      }
-    });
+    //   }
+
+    //   if(clicked == false){
+    //     var src = "/images/cercle-arrow.png";
+    //     $(this).attr("src", src);
+    //     changeColorOnHover("arrow");
+
+    //   }
+    //   console.log(clicked);
+    // });
+
   };
 
   function changeColorOnHover(symbol) {
@@ -51,16 +57,19 @@ $( document ).ready(function() {
             $(this).attr("src", src);
         });
 
-    $(".process-option")
-        .mouseover(function() {
-            var src = "/images/cercle-"+symbol+".png";
-            $(this).attr("src", src);
-        })
-        .mouseout(function() {
-            var src = "/images/cercle-"+symbol+"-lighter.png";
-            $(this).attr("src", src);
-        });
+
+    // $(".process-option")
+    //     .mouseover(function() {
+    //         var src = "/images/cercle-"+symbol+".png";
+    //         $(this).attr("src", src);
+    //     })
+    //     .mouseout(function() {
+    //         var src = "/images/cercle-"+symbol+"-lighter.png";
+    //         $(this).attr("src", src);
+    //     });
   };
+
+
 
 //JS version:
   // var clicked = false;

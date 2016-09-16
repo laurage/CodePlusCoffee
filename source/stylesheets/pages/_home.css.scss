@@ -159,6 +159,13 @@ canvas {
   min-height: 100vh;
 }
 
+.half-height-page{
+  display: flex;
+  align-items: center;
+
+  min-height: 50vh;
+}
+
 .horizontal-center{
   justify-content: center;
 }

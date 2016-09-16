@@ -27,3 +27,6 @@ gem 'puma'
 
 # meta-tags
 gem 'middleman-meta-tags'
+
+# Hide email address from spammers
+gem 'actionview-encoded_mail_to'

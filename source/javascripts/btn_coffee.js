@@ -2,7 +2,8 @@ $( document ).ready(function() {
 
   // Scroll to specific point in page
 
-    $("#landinpage-btn").on("click", function(event) {
+    $("#landingpage-btn").on("click", function(event) {
+      console.log("clicked!");
       $('html, body').animate({
           scrollTop: $("#title_solution").offset().top
       }, 1000);

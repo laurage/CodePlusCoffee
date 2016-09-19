@@ -186,6 +186,9 @@ canvas {
   font-family : $base-font;
   cursor      : pointer;
 }
+.no-btn-decoration-mobile{
+  color: black;
+}
 
 .flex-end{
   display: flex;
@@ -239,4 +242,8 @@ canvas {
 
 .highlight-color-strong{
   color: $highlight-color-strong;
+}
+
+.red-block{
+  border-color: #FF0000;
 }

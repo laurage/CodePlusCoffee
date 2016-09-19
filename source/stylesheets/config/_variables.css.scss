@@ -31,16 +31,27 @@ $screen-md-min: 768px;
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
-// Scheme
-$highlight-color-1: #D8636A;
+// // Scheme Strawberry
+// $highlight-color-1: #D8636A;
+// $highlight-color-strong: white;
+// $highlight-color-1-lighter: #D5C0B8;
+// $highlight-color-2: #2E3944;
+// $highlight-color-1-btn-on-dark-page: #EF777D;
+// $main-text-color: #231F20;
+// $navbar-footer-color: #C9C9C9;
+// $background-color: #E6E7E8;
+// $background-color-strong: #CE3A43;
+
+// Scheme Sunflower
+$highlight-color-1: #FFA500;
 $highlight-color-strong: white;
 $highlight-color-1-lighter: #D5C0B8;
 $highlight-color-2: #2E3944;
-$highlight-color-1-btn-on-dark-page: #EF777D;
+$highlight-color-1-btn-on-dark-page: #CE3A43;
 $main-text-color: #231F20;
 $navbar-footer-color: #C9C9C9;
 $background-color: #E6E7E8;
-$background-color-strong: #CE3A43;
+$background-color-strong: #FFC50A;
 
 // These colours are not part of the scheme:
 $blue: #469AE0;

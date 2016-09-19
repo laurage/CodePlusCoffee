@@ -155,14 +155,16 @@ canvas {
 .full-height-page{
   display: flex;
   align-items: center;
-
+  padding-bottom: 30px;
+  padding-top: 10px;
   min-height: 100vh;
 }
 
 .half-height-page{
   display: flex;
   align-items: center;
-
+  padding-bottom: 30px;
+  padding-top: 10px;
   min-height: 50vh;
 }
 

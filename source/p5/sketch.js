@@ -1,6 +1,6 @@
 var image_x = 956;
-var image_y = 253;
-var list_image_x = [1150, 1150, 1150, 1180];
+var image_y = 400;
+var list_image_x = [1430, 1500, 1500, 1500];
 var number_img = 4;
 var originalCanvasWidth;
 var originalCanvasHeight;
@@ -36,6 +36,7 @@ function setup() {
   originalCanvasWidth = 1920;
   originalCanvasHeight = 948;
 
+
 }
 
 // To resize canvas
@@ -45,25 +46,26 @@ function draw() {
 
   background(230,231,232);
   //background(255,0,0);
-    displayImage();
 
-    // Timer
-    if (millis() > next) {
+  displayImage();
 
-      fill(0);
-      increment++;
+  // Timer
+  if (millis() > next) {
 
-
-      initiateShapes();
+    fill(0);
+    increment++;
 
 
-        next = millis() + 2000;
+    initiateShapes();
+
+
+      next = millis() + 2000;
 
 
 
-      if (increment==number_img){
-        increment = 0;
-      }
+    if (increment==number_img){
+      increment = 0;
+    }
 
 
     }
@@ -78,6 +80,7 @@ function draw() {
 
 
 function displayImage(){
+  imageMode(CENTER);
   image(img_list[increment], scalingPosition(img_list[increment]).x, scalingPosition(img_list[increment]).y, scaling(img_list[increment]).x, scaling(img_list[increment]).y);
 }
 
@@ -86,24 +89,25 @@ function displayImage(){
 function scaling(img){
   scaled_img_width = (windowWidth*img.width)/originalCanvasWidth;
   scaled_img_height = (scaled_img_width*img.height)/img.width;
+
   var img_size = createVector(scaled_img_width,scaled_img_height);
 
   return img_size; //returns vector(width, height, 0)
 }
 
 function scalingPosition(img){
-  scaled_img_x = (windowWidth*list_image_x[increment])/originalCanvasWidth;
-  scaled_img_y = (scaled_img_x*image_y)/list_image_x[increment];
+  var scaled_position_x = (windowWidth / originalCanvasWidth) * 1500 - 80; //
+  var scaled_position_y = (windowHeight / originalCanvasHeight) * image_y ;
 
-  var img_position = createVector(scaled_img_x,scaled_img_y);
+
+  var img_position = createVector(scaled_position_x,scaled_position_y);
   return img_position;
 }
 
 function initiateShapes(){
   for(var i=0; i<=numberShapesInitial; i++){
     var shapeNumber = int(random(2));
-    randomShape[i] = new randomShape(random(900-widthEpicentre,900+widthEpicentre),random(300-widthEpicentre,300+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
-    randomShape[i].init();
+    randomShape[i] = new randomShape(random(scalingPosition(img_list[increment]).x-widthEpicentre,scalingPosition(img_list[increment]).x+widthEpicentre),random(scalingPosition(img_list[increment]).y-widthEpicentre,scalingPosition(img_list[increment]).y+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
   }
 
 
@@ -118,8 +122,6 @@ function randomShape(x,y,xoff,yoff,shapeNumber){
   this.direction = 1;
 
 
-  this.init = function(){
-  }
 
   this.display = function(){
     if (this.shapeNumber == 0){

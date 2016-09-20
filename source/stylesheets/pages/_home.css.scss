@@ -57,6 +57,7 @@ br {
 }
 
 .landingpage{
+  // In the landing page, titles have been defined to resize automatically with font-size: 4.3vw;
   @media (min-width: 0px) {
      //p{background-color: red;}
      .device-large{display:none;}

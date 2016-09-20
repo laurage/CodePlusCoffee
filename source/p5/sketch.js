@@ -1,6 +1,6 @@
-var image_x = 956;
-var image_y = 400;
-var list_image_x = [1430, 1500, 1500, 1500];
+var image_x;
+var image_y;
+var list_image_x = [];
 var number_img = 4;
 var originalCanvasWidth;
 var originalCanvasHeight;
@@ -31,10 +31,30 @@ function preload() {
 
 function setup() {
   // Stretches canvas to full window
-  createCanvas(1920, 948);
 
-  originalCanvasWidth = 1920;
-  originalCanvasHeight = 948;
+  if (windowWidth > 768){ // desktop
+    var image_x = 956;
+    var image_y = 400;
+    var list_image_x = [1430, 1500, 1500, 1500];
+
+    originalCanvasWidth = 1920;
+    originalCanvasHeight = 948;
+  }else{ // mobile
+    // var image_x = 180;
+    // var image_y = 1050;
+    // var list_image_x = [180, 180, 180, 180];
+
+    // originalCanvasWidth = 948;
+    // originalCanvasHeight = 1920;
+  }
+
+
+  if (windowWidth > 768){
+    originalCanvasWidth = 1920;
+    originalCanvasHeight = 948;
+    createCanvas(originalCanvasWidth, originalCanvasHeight);
+    console.log(originalCanvasWidth);
+  }
 
 
 }
@@ -43,6 +63,22 @@ function setup() {
 function windowResized() { resizeCanvas(windowWidth, windowHeight); }
 
 function draw() {
+
+  if (windowWidth > 768){ // desktop
+    var image_x = 956;
+    var image_y = 400;
+    var list_image_x = [1430, 1500, 1500, 1500];
+
+    originalCanvasWidth = 1920;
+    originalCanvasHeight = 948;
+  }else{ // mobile
+    // var image_x = 180;
+    // var image_y = 1050;
+    // var list_image_x = [180, 180, 180, 180];
+
+    // originalCanvasWidth = 948;
+    // originalCanvasHeight = 1920;
+  }
 
   background(230,231,232);
   //background(255,0,0);
@@ -55,8 +91,11 @@ function draw() {
     fill(0);
     increment++;
 
-
-    initiateShapes();
+    if (windowWidth > 768){ //desktop
+      initiateShapesDesktop(scalingPositionDesktop(img_list[increment],400).x);
+    }else{
+      // initiateShapes(180);
+    }
 
 
       next = millis() + 2000;
@@ -81,12 +120,50 @@ function draw() {
 
 function displayImage(){
   imageMode(CENTER);
-  image(img_list[increment], scalingPosition(img_list[increment]).x, scalingPosition(img_list[increment]).y, scaling(img_list[increment]).x, scaling(img_list[increment]).y);
+  if (windowWidth > 768){//desktop
+      image(img_list[increment], scalingPositionDesktop(img_list[increment],400).x, scalingPositionDesktop(img_list[increment],400).y, scalingDesktop(img_list[increment]).x, scalingDesktop(img_list[increment]).y);
+  }else{
+    // if (windowHeight > 610){
+    //  image(img_list[increment], list_image_x[increment], scalingPosition(img_list[increment]).y, scaling(img_list[increment]).x, scaling(img_list[increment]).y);
+    // } else{
+    //  image(img_list[increment], list_image_x[increment], 330, scaling(img_list[increment]).x, scaling(img_list[increment]).y);
+    // };
+  }
+
 }
 
-// Scales images width & height proportionnally to the widht of the screen
+// Contrary to the desktop sketch, here scaling the size is only used to adapt the size
+// of the initial image (very big) to a smaller screen ONCE. It doesn't scale linearly with the
+// width and height of a tiny screen.
 // img.width & img.height are the width and height of the original file. Doesn't change when redimensionned
-function scaling(img){
+// function scaling(img){
+//   scaled_img_width = img.width*0.28;
+//   scaled_img_height = (scaled_img_width*img.height*0.28)/(img.width*0.28);
+
+//   var img_size = createVector(scaled_img_width,scaled_img_height);
+
+//   return img_size; //returns vector(width, height, 0)
+// }
+
+// function scalingPosition(img, image_y){
+//   //var scaled_position_x = (windowWidth / originalCanvasWidth) * 180 ;//- 80; //
+//   var scaled_position_y = (windowHeight/ originalCanvasHeight) * image_y  ;
+
+//   console.log("mobile");
+//   var img_position = createVector(180,scaled_position_y);
+//   return img_position;
+// }
+
+// function initiateShapes(posX){
+//   for(var i=0; i<=numberShapesInitial; i++){
+//     var shapeNumber = int(random(2));
+//     randomShape[i] = new randomShape(random(posX-widthEpicentre,posX+widthEpicentre),random(scalingPosition(img_list[increment]).y-widthEpicentre,scalingPosition(img_list[increment]).y+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
+//   }
+// }
+
+
+
+function scalingDesktop(img){
   scaled_img_width = (windowWidth*img.width)/originalCanvasWidth;
   scaled_img_height = (scaled_img_width*img.height)/img.width;
 
@@ -95,23 +172,27 @@ function scaling(img){
   return img_size; //returns vector(width, height, 0)
 }
 
-function scalingPosition(img){
+function scalingPositionDesktop(img, image_y){
   var scaled_position_x = (windowWidth / originalCanvasWidth) * 1500 - 80; //
   var scaled_position_y = (windowHeight / originalCanvasHeight) * image_y ;
 
 
   var img_position = createVector(scaled_position_x,scaled_position_y);
+  console.log(list_image_x[0] );
   return img_position;
 }
 
-function initiateShapes(){
+function initiateShapesDesktop(posX){
   for(var i=0; i<=numberShapesInitial; i++){
     var shapeNumber = int(random(2));
-    randomShape[i] = new randomShape(random(scalingPosition(img_list[increment]).x-widthEpicentre,scalingPosition(img_list[increment]).x+widthEpicentre),random(scalingPosition(img_list[increment]).y-widthEpicentre,scalingPosition(img_list[increment]).y+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
+    randomShape[i] = new randomShape(random(scalingPositionDesktop(img_list[increment],400).x-widthEpicentre,scalingPositionDesktop(img_list[increment],400).x+widthEpicentre),random(scalingPositionDesktop(img_list[increment],400).y-widthEpicentre,scalingPositionDesktop(img_list[increment],400).y+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
   }
 
 
 }
+
+
+
 
 function randomShape(x,y,xoff,yoff,shapeNumber){
   this.size = 5;
@@ -159,8 +240,6 @@ function randomShape(x,y,xoff,yoff,shapeNumber){
     var randX = map(nX,0,1,-speed,speed);
     this.pos.x = (this.pos.x + randX)*this.direction;
     this.xoff = this.xoff + 0.001;
-
-    //console.log(direction);
 
 
     var nY = noise(this.yoff);

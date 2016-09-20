@@ -240,3 +240,14 @@ canvas {
 .highlight-color-strong{
   color: $highlight-color-strong;
 }
+
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+}
+.picto-center{
+  flex: 0 0 20%;
+}
+.text-justify {
+  text-align: justify;
+}

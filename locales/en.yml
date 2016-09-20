@@ -1,0 +1,18 @@
+---
+en:
+  # TODO
+  navbar:
+    haveacoffeewithus: '"have a coffee with us"'
+    what: "what?"
+    how: "how?"
+    team: "team"
+    contact: "contact"
+    languages: "Languages"
+  landingpage:
+    two_simple_elements1: "TWO SIMPLE ELEMENTS TO "
+    two_simple_elements2: "BUILD YOU AWESOME WEBSITES"
+    coffee?: "COFFEE? WHY COFFEE?"
+  contact:
+    hello: 'Hello bidule'
+  footer:
+    powered: "Powered by "

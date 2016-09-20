@@ -19,6 +19,17 @@
 
 <% button_number = 0 %>
   <div class="device-large">
+    <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <%= t "navbar.languages" %>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="/index.html">English</a></li>
+    <li><a href="/fr/index.html">French</a></li>
+  </ul>
+</div>
+
     <% list_buttons.each do |button| %>
       <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
       <% button_number += 1 %>

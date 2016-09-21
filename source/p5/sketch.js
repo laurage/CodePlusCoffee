@@ -40,12 +40,12 @@ function setup() {
     originalCanvasWidth = 1920;
     originalCanvasHeight = 948;
   }else{ // mobile
-    // var image_x = 180;
-    // var image_y = 1050;
-    // var list_image_x = [180, 180, 180, 180];
+    var image_x = 300;
+    var image_y = 1050;
+    var list_image_x = [180, 180, 180, 180];
 
-    // originalCanvasWidth = 948;
-    // originalCanvasHeight = 1920;
+    originalCanvasWidth = 948;
+    originalCanvasHeight = 1920;
   }
 
 
@@ -53,7 +53,10 @@ function setup() {
     originalCanvasWidth = 1920;
     originalCanvasHeight = 948;
     createCanvas(originalCanvasWidth, originalCanvasHeight);
-    console.log(originalCanvasWidth);
+  } else{
+    originalCanvasWidth = 948;
+    originalCanvasHeight = 1920;
+    createCanvas(originalCanvasWidth, originalCanvasHeight);
   }
 
 
@@ -70,14 +73,17 @@ function draw() {
     var list_image_x = [1430, 1500, 1500, 1500];
 
     originalCanvasWidth = 1920;
-    originalCanvasHeight = 948;
-  }else{ // mobile
-    // var image_x = 180;
-    // var image_y = 1050;
-    // var list_image_x = [180, 180, 180, 180];
 
-    // originalCanvasWidth = 948;
-    // originalCanvasHeight = 1920;
+  }else{ // mobile
+    var image_x = 300;
+    var image_y = 1050;
+    var list_image_x = [180, 180, 180, 180];
+
+    originalCanvasWidth = 948;
+    originalCanvasHeight = 1920;
+
+
+
   }
 
   background(230,231,232);
@@ -94,7 +100,7 @@ function draw() {
     if (windowWidth > 768){ //desktop
       initiateShapesDesktop(scalingPositionDesktop(img_list[increment],400).x);
     }else{
-      // initiateShapes(180);
+      initiateShapes(180);
     }
 
 
@@ -119,15 +125,18 @@ function draw() {
 
 
 function displayImage(){
+
   imageMode(CENTER);
   if (windowWidth > 768){//desktop
       image(img_list[increment], scalingPositionDesktop(img_list[increment],400).x, scalingPositionDesktop(img_list[increment],400).y, scalingDesktop(img_list[increment]).x, scalingDesktop(img_list[increment]).y);
   }else{
-    // if (windowHeight > 610){
-    //  image(img_list[increment], list_image_x[increment], scalingPosition(img_list[increment]).y, scaling(img_list[increment]).x, scaling(img_list[increment]).y);
-    // } else{
-    //  image(img_list[increment], list_image_x[increment], 330, scaling(img_list[increment]).x, scaling(img_list[increment]).y);
-    // };
+    if (windowHeight > 610){
+     image(img_list[increment], 165, scalingPosition(img_list[increment],1050).y, scaling(img_list[increment]).x, scaling(img_list[increment],1050).y);
+    } else{
+     image(img_list[increment], 165, 330, scaling(img_list[increment]).x, scaling(img_list[increment],1050).y);
+    };
+
+
   }
 
 }
@@ -136,30 +145,31 @@ function displayImage(){
 // of the initial image (very big) to a smaller screen ONCE. It doesn't scale linearly with the
 // width and height of a tiny screen.
 // img.width & img.height are the width and height of the original file. Doesn't change when redimensionned
-// function scaling(img){
-//   scaled_img_width = img.width*0.28;
-//   scaled_img_height = (scaled_img_width*img.height*0.28)/(img.width*0.28);
+function scaling(img){
+  scaled_img_width = img.width*0.28;
+  scaled_img_height = (scaled_img_width*img.height*0.28)/(img.width*0.28);
 
-//   var img_size = createVector(scaled_img_width,scaled_img_height);
+  var img_size = createVector(scaled_img_width,scaled_img_height);
 
-//   return img_size; //returns vector(width, height, 0)
-// }
+  return img_size; //returns vector(width, height, 0)
+}
 
-// function scalingPosition(img, image_y){
-//   //var scaled_position_x = (windowWidth / originalCanvasWidth) * 180 ;//- 80; //
-//   var scaled_position_y = (windowHeight/ originalCanvasHeight) * image_y  ;
+function scalingPosition(img, image_y){
 
-//   console.log("mobile");
-//   var img_position = createVector(180,scaled_position_y);
-//   return img_position;
-// }
+  //var scaled_position_x = (windowWidth / originalCanvasWidth) * 180 ;//- 80; //
+  var scaled_position_y = (windowHeight/ originalCanvasHeight) * image_y  ;
 
-// function initiateShapes(posX){
-//   for(var i=0; i<=numberShapesInitial; i++){
-//     var shapeNumber = int(random(2));
-//     randomShape[i] = new randomShape(random(posX-widthEpicentre,posX+widthEpicentre),random(scalingPosition(img_list[increment]).y-widthEpicentre,scalingPosition(img_list[increment]).y+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
-//   }
-// }
+
+  var img_position = createVector(165,scaled_position_y);
+  return img_position;
+}
+
+function initiateShapes(posX){
+  for(var i=0; i<=numberShapesInitial; i++){
+    var shapeNumber = int(random(2));
+    randomShape[i] = new randomShape(random(posX-widthEpicentre,posX+widthEpicentre),random(scalingPosition(img_list[increment],1050).y-widthEpicentre,scalingPosition(img_list[increment],1050).y+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
+  }
+}
 
 
 
@@ -178,7 +188,7 @@ function scalingPositionDesktop(img, image_y){
 
 
   var img_position = createVector(scaled_position_x,scaled_position_y);
-  console.log(list_image_x[0] );
+
   return img_position;
 }
 

@@ -273,6 +273,14 @@ canvas {
   color: $highlight-color-strong;
 }
 
-.red-block{
-  border-color: #FF0000;
+.flexbox{
+  display: flex;
+  justify-content: space-between;
+}
+.picto-center{
+  flex: 0 0 20%;
+}
+.text-justify {
+  text-align: justify;
+
 }

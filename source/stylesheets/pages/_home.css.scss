@@ -209,6 +209,14 @@ canvas {
   justify-content: flex-end;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
 .navbar-fixed{
   color: white;
 
@@ -218,8 +226,6 @@ canvas {
   z-index: 1;
   width: 100%;
 }
-
-*
 
 .btn{
   font-weight: 700;
@@ -255,9 +261,23 @@ canvas {
 }
 
 .red-block{
-  border-color: #FF0000;
+  background-color: red;
 }
 
 .translation_missing{
   background-color: red;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.flexbox{
+  display: flex;
+
+
+}
+.flex-item{
+  flex: 0 0 20%;
 }

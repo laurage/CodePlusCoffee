@@ -4,35 +4,51 @@
 
 <% button_number = 0 %>
 
-<div class="footer-navbar-container navbar-fixed flex-end">
+<div class="footer-navbar-container navbar-fixed">
   <div class="device-small">
-    <div class="dropdown">
-      <i class="fa fa-bars dropdown-toggle fa-3x" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <% list_buttons.each do |button| %>
-      <button class="no-btn-decoration-mobile" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button><br>
-      <% button_number += 1 %>
-    <% end %>
-      </ul>
+    <!-- btn languages mobile -->
+    <!-- btn pages mobile -->
+    <div class="flex-end">
+      <div class="dropdown">
+        <i class="fa fa-bars dropdown-toggle fa-3x" data-toggle="dropdown"></i>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <% list_buttons.each do |button| %>
+        <button class="no-btn-decoration-mobile" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button><br>
+        <% button_number += 1 %>
+      <% end %>
+        </ul>
+      </div>
     </div>
   </div>
 
-<% button_number = 0 %>
-  <div class="device-large">
-    <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <%= t "navbar.languages" %>
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li><a href="/index.html">English</a></li>
-    <li><a href="/fr/index.html">French</a></li>
-  </ul>
-</div>
+  <% button_number = 0 %>
 
-    <% list_buttons.each do |button| %>
-      <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
-      <% button_number += 1 %>
-    <% end %>
+
+  <div class="device-large flexbox">
+    <!-- btn languages no mobile -->
+    <div class="flex-item">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <%= t "navbar.languages" %>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="/index.html">English</a></li>
+              <li><a href="/fr/index.html">Français</a></li>
+            </ul>
+          </div>
+    </div>
+    <!-- btn pages no mobile -->
+    <div class="flex-item">
+
+        <% list_buttons.each do |button| %>
+          <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
+          <% button_number += 1 %>
+        <% end %>
+
+    </div>
   </div>
 </div>
+
+
+

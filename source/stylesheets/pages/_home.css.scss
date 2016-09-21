@@ -8,6 +8,18 @@ $breakpoints: (
     color: $highlight-color-1;
 }
 
+
+.uppercasing{
+
+  @media (min-width: $screen-md-min) {
+    p{
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+
 h1{
   margin-bottom: 35px;
 }
@@ -45,16 +57,17 @@ br {
 }
 
 .landingpage{
+  // In the landing page, titles have been defined to resize automatically with font-size: 4.3vw;
   @media (min-width: 0px) {
      //p{background-color: red;}
      .device-large{display:none;}
      .device-small{display:block;}
 
      h1{
-       font-size: 130px; font-size: 25vw;
+       font-size: 110px; //font-size: 25vw;
      }
      h2{
-       font-size: 19px; font-size: 4.3vw;
+       font-size: 19px; //font-size: 4.3vw;
      }
   }
 
@@ -71,6 +84,24 @@ br {
   }
 
 }
+
+
+.animate{
+  // In the landing page, titles have been defined to resize automatically with font-size: 4.3vw;
+  @media (min-width: 0px) {
+     p{background-color: red;}
+     .device-large{display:none;}
+     .device-small{display:block;}
+  }
+
+  @media (min-width: $screen-md-min) {
+    p{background-color: blue;}
+    .device-large{display:block;}
+    .device-small{display:none;}
+  }
+
+}
+
 
 .footer-navbar-container{
 
@@ -155,14 +186,16 @@ canvas {
 .full-height-page{
   display: flex;
   align-items: center;
-
+  padding-bottom: 30px;
+  padding-top: 10px;
   min-height: 100vh;
 }
 
 .half-height-page{
   display: flex;
   align-items: center;
-
+  padding-bottom: 30px;
+  padding-top: 10px;
   min-height: 50vh;
 }
 
@@ -185,6 +218,9 @@ canvas {
   background  : transparent;
   font-family : $base-font;
   cursor      : pointer;
+}
+.no-btn-decoration-mobile{
+  color: black;
 }
 
 .flex-end{
@@ -221,10 +257,6 @@ canvas {
   cursor      : pointer;
 }
 
-.padding-left-19px{
-  padding-left: 19px; //corresponds to offset buttons other lines
-}
-
 .process-option{
   color:$highlight-color-1-lighter;
 }
@@ -250,4 +282,5 @@ canvas {
 }
 .text-justify {
   text-align: justify;
+
 }

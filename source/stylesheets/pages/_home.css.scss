@@ -115,7 +115,7 @@ br {
     .device-large{display:block;}
     .device-small{display:none;}
     background-color: $navbar-footer-color;
-    padding-bottom:10px;
+    padding-bottom:2px;
   }
 }
 //   /* Medium devices (desktops, 992px and up) */
@@ -248,7 +248,7 @@ canvas {
 
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 10px;
+  padding-top: 2px;
   font-weight: 700;
   font-size   : 0.8em;
 }
@@ -281,9 +281,9 @@ canvas {
   background-color: red;
 }
 
-.flex-item{
-  flex: 0 0 20%;
-}
+// .flex-item{
+//   flex: 0 0 20%;
+// }
 
 .flexbox{
   display: flex;
@@ -292,26 +292,26 @@ canvas {
 .picto-center{
   flex: 0 0 20%;
 }
-.text-justify {
-  text-align: justify;
-}
+// .text-justify {
+//   text-align: justify;
+// }
 
 .flex-end{
   display: flex;
   justify-content: flex-end;
 }
 
-.flex-start {
-  justify-content: flex-start;
-}
+// .flex-start {
+//   justify-content: flex-start;
+// }
 
 .in-line{
   display:inline-block;
 }
 
-.flex-container{
-  //align-items: center;
-}
+// .flex-container{
+//   align-items: center;
+// }
 
 .dropdown{
   font-size:15px;
@@ -327,3 +327,18 @@ canvas {
   padding-left: 20px;
 }
 
+.navbar-bottom{
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-container{
+  position: relative;
+}
+
+
+.navbar-right{
+  position: absolute;
+  bottom: -45px;
+  right: 0;
+}

@@ -115,6 +115,7 @@ br {
     .device-large{display:block;}
     .device-small{display:none;}
     background-color: $navbar-footer-color;
+    padding-bottom:10px;
   }
 }
 //   /* Medium devices (desktops, 992px and up) */
@@ -223,14 +224,7 @@ canvas {
   color: black;
 }
 
-.flex-end{
-  display: flex;
-  justify-content: flex-end;
-}
 
-.flex-start {
-  justify-content: flex-start;
-}
 
 .center {
   justify-content: center;
@@ -301,3 +295,35 @@ canvas {
 .text-justify {
   text-align: justify;
 }
+
+.flex-end{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.in-line{
+  display:inline-block;
+}
+
+.flex-container{
+  //align-items: center;
+}
+
+.dropdown{
+  font-size:15px;
+}
+
+.no-btn-decoration-language{
+  margin      : 0;
+  border      : 3px;
+  background-color  : transparent;
+  font-family : $base-font;
+  cursor      : pointer;
+  color: $background-color-strong;
+  padding-left: 20px;
+}
+

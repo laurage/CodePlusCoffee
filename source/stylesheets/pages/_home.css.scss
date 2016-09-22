@@ -228,6 +228,14 @@ canvas {
   justify-content: flex-end;
 }
 
+.flex-start {
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+}
+
 .navbar-fixed{
   color: white;
 
@@ -237,8 +245,6 @@ canvas {
   z-index: 1;
   width: 100%;
 }
-
-*
 
 .btn{
   font-weight: 700;
@@ -273,6 +279,17 @@ canvas {
   color: $highlight-color-strong;
 }
 
+.red-block{
+  background-color: red;
+}
+
+.translation_missing{
+  background-color: red;
+}
+
+.flex-item{
+  flex: 0 0 20%;
+
 .flexbox{
   display: flex;
   justify-content: space-between;
@@ -282,5 +299,4 @@ canvas {
 }
 .text-justify {
   text-align: justify;
-
 }

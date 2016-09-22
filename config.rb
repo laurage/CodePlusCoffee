@@ -1,6 +1,8 @@
 ###
 # Compass
 ###
+# INTERNATIONALIZATION
+activate :i18n
 
 # Change Compass configuration
 # compass_config do |config|

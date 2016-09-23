@@ -4,6 +4,7 @@
 
 <% button_number = 0 %>
 
+
 <div class="footer-navbar-container navbar-fixed">
   <div class="device-small">
     <!-- btn languages mobile -->
@@ -24,28 +25,39 @@
   <% button_number = 0 %>
 
 
-  <div class="device-large flexbox">
-    <!-- btn languages no mobile -->
-    <div class="flex-item">
-      <div class="dropdown">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              <%= t "navbar.languages" %>
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-              <li><a href="/index.html">English</a></li>
-              <li><a href="/fr/index.html">Français</a></li>
-            </ul>
-          </div>
-    </div>
-    <!-- btn pages no mobile -->
-    <div class="flex-item">
+  <div class="device-large ">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-md-10 col-xs-offset-1">
+          <div class="navbar-container">
+          <img class = "in-line navbar-left" src="/images/logo_color2.jpg" alt="logo codepluscoffee" width="70">
 
-        <% list_buttons.each do |button| %>
-          <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
-          <% button_number += 1 %>
-        <% end %>
+            <!-- btn pages no mobile -->
+            <div class="navbar-right ">
+              <div class="in-line">
 
+                  <% list_buttons.each do |button| %>
+                    <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
+                    <% button_number += 1 %>
+                  <% end %>
+
+              </div>
+
+              <!-- btn languages no mobile -->
+              <div class="dropdown in-line languages">
+                <button class="dropdown-toggle no-btn-decoration-language" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <%= t "navbar.languages" %>
+                <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="/index.html">English</a></li>
+                  <li><a href="/fr/index.html">Français</a></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

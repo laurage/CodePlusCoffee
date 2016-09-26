@@ -1,11 +1,5 @@
-<% list_name_buttons = ["have a coffee with us","what?", "how?", "team", "contact"] %>
-
-<% list_buttons = ["solution","process", "philo", "about", "contact"] %>
-
-<% button_number = 0 %>
-
-
 <div class="footer-navbar-container navbar-fixed">
+  <!-- mobil version -->
   <div class="device-small">
     <!-- btn languages mobile -->
     <!-- btn pages mobile -->
@@ -13,35 +7,36 @@
       <div class="dropdown">
         <i class="fa fa-bars dropdown-toggle fa-3x" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <% list_buttons.each do |button| %>
-        <button class="no-btn-decoration-mobile" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button><br>
-        <% button_number += 1 %>
-      <% end %>
+          <a class="no-btn-decoration-mobile navbar_btn_solution" role="button"><%= t "navbar.haveacoffeewithus" %></a><br>
+          <a class="no-btn-decoration-mobile navbar_btn_process" role="button"><%= t "navbar.how" %></a><br>
+          <a class="no-btn-decoration-mobile navbar_btn_philo" role="button"><%= t "navbar.what" %></a><br>
+          <a class="no-btn-decoration-mobile navbar_btn_about" role="button"><%= t "navbar.team" %></a><br>
+          <a class="no-btn-decoration-mobile navbar_btn_contact_test" role="button"><%= t "navbar.contact" %></a>
         </ul>
       </div>
     </div>
   </div>
 
-  <% button_number = 0 %>
-
-
+  <!-- no mobile version -->
   <div class="device-large ">
     <div class="container">
       <div class="row">
         <div class="col-xs-10 col-md-10 col-xs-offset-1">
           <div class="navbar-container">
-          <img class = "in-line navbar-left" src="/images/logo_color7_transparent.svg" alt="logo codepluscoffee" width="70">
+          <img class = "in-line navbar-left navbar_btn_logo" src="/images/logo_color7_transparent.svg" alt="logo codepluscoffee" width="70">
 
             <!-- btn pages no mobile -->
             <div class="navbar-right ">
               <div class="in-line">
+                <p class="text-center ">
 
-                  <% list_buttons.each do |button| %>
-                    <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
-                    <% button_number += 1 %>
-                  <% end %>
+                <a class="no-btn-decoration navbar_btn_solution" role="button"><%= t "navbar.haveacoffeewithus" %></a>
+                <a class="no-btn-decoration navbar_btn_process" role="button"><%= t "navbar.how" %></a>
+                <a class="no-btn-decoration navbar_btn_philo" role="button"><%= t "navbar.what" %></a>
+                <a class="no-btn-decoration navbar_btn_about" role="button"><%= t "navbar.team" %></a>
+                <a class="no-btn-decoration navbar_btn_contact_test" role="button"><%= t "navbar.contact" %></a>
+                </p></div>
 
-              </div>
 
               <!-- btn languages no mobile -->
               <div class="dropdown in-line languages">
@@ -50,12 +45,12 @@
                 <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <li><a href="/index.html">English</a></li>
-                  <li><a href="/fr/index.html">Français</a></li>
+                  <li><a href="<%= t "navbar.link_to_other_languages_1" %>"><%= t "navbar.other_languages_1" %></a></li>
                 </ul>
               </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>

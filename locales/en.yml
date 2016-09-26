@@ -2,12 +2,14 @@
 en:
   # TODO
   navbar:
-    haveacoffeewithus: '"have a coffee with us"'
-    what: "what?"
-    how: "how?"
-    team: "team"
-    contact: "contact"
+    haveacoffeewithus: "HAVE A COFFEE WITH US"
+    what: "WHAT?"
+    how: "HOW?"
+    team: "TEAM"
+    contact: "CONTACT"
     languages: "en"
+    other_languages_1: "fr"
+    link_to_other_languages_1: "/fr/index.html"
   landingpage:
     two_simple_elements1: "TWO SIMPLE ELEMENTS TO "
     two_simple_elements2: "BUILD YOU AWESOME WEBSITES"

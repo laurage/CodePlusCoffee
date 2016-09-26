@@ -1,11 +1,13 @@
 fr:
   navbar:
-    haveacoffeewithus: '"have a coffee with us"'
-    what: "what?"
-    how: "how?"
-    team: "team"
-    contact: "contact"
+    haveacoffeewithus: "PRENDRE UN CAFE AVEC NOUS"
+    what: "POURQUOI?"
+    how: "COMMENT?"
+    team: "L'EQUIPE"
+    contact: "CONTACT"
     languages: "fr"
+    other_languages_1: "en"
+    link_to_other_languages_1: "/index.html"
   landingpage:
     two_simple_elements1: "TWO SIMPLE ELEMENTS TO "
     two_simple_elements2: "BUILD YOU AWESOME WEBSITES"

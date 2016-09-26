@@ -1,5 +1,11 @@
 $( document ).ready(function() {
-
+  // btn logo
+  $(".navbar_btn_logo").click(function(event) {
+    console.log("click on navbar_btn_logo");
+    $('html, body').animate({
+      scrollTop: $(".head_of_landingpage").offset().top
+       - 100}, 1000);
+  });
 
   // btn solution
   $(".navbar_btn_solution").click(function(event) {

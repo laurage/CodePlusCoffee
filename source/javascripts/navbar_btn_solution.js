@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+
   // btn solution
   $(".navbar_btn_solution").click(function(event) {
     console.log("click on navbar_btn_solution");

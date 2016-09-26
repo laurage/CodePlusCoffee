@@ -6,6 +6,7 @@
 
 
 <div class="footer-navbar-container navbar-fixed">
+  <!-- mobil version -->
   <div class="device-small">
     <!-- btn languages mobile -->
     <!-- btn pages mobile -->
@@ -24,7 +25,7 @@
 
   <% button_number = 0 %>
 
-
+  <!-- no mobile version -->
   <div class="device-large ">
     <div class="container">
       <div class="row">
@@ -35,13 +36,15 @@
             <!-- btn pages no mobile -->
             <div class="navbar-right ">
               <div class="in-line">
+                <p class="text-center ">
 
-                  <% list_buttons.each do |button| %>
-                    <button class="no-btn-decoration" id=<%="navbar_btn_#{button}" %>><%=list_name_buttons[button_number].upcase%></button>
-                    <% button_number += 1 %>
-                  <% end %>
+                <a class="no-btn-decoration navbar_btn_solution" role="button">HAVE A COFFE WITH US</a>
+                <a class="no-btn-decoration navbar_btn_process" role="button">HOW?</a>
+                <a class="no-btn-decoration navbar_btn_philo" role="button">WHAT?</a>
+                <a class="no-btn-decoration navbar_btn_about" role="button">TEAM</a>
+                <a class="no-btn-decoration navbar_btn_contact_test" role="button">CONTACT</a>
+                </p></div>
 
-              </div>
 
               <!-- btn languages no mobile -->
               <div class="dropdown in-line languages">
@@ -54,8 +57,9 @@
                   <li><a href="/fr/index.html">Français</a></li>
                 </ul>
               </div>
+              </div>
             </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>

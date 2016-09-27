@@ -58,12 +58,13 @@ br {
 
 .landingpage{
   // In the landing page, titles have been defined to resize automatically with font-size: 4.3vw;
-  @media (min-width: 0px) {
-     //p{background-color: red;}
+  @media (min-width: 0) and (max-width: $screen-md-min) {
+     // p{background-color: red;}
      .device-large{display:none;}
      .device-small{display:block;}
 
      h1{
+      padding-top: 20px;
        font-size: 110px; //font-size: 25vw;
      }
      h2{
@@ -72,7 +73,7 @@ br {
   }
 
   @media (min-width: $screen-md-min) {
-    //p{background-color: green;}
+    // p{background-color: green;}
     h1{
       font-size: 130px; font-size: 9vw;
     }
@@ -92,6 +93,7 @@ br {
      p{background-color: red;}
      .device-large{display:none;}
      .device-small{display:block;}
+     padding-top: 20px;
   }
 
   @media (min-width: $screen-md-min) {
@@ -240,7 +242,7 @@ canvas {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
 }
 
@@ -343,10 +345,28 @@ canvas {
 
 .navbar-right{
   position: absolute;
-  bottom: -45px;
+  bottom: 5px;
   right: 0;
 }
 
 .navbar-scrolable-mobile{
-  z-index: 2;
+
 }
+
+.logo-mobile{
+  display: block;
+  position: absolute;
+  z-index: 3;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+
+}
+
+.dropdown-language{
+  position: absolute;
+  z-index: 3;
+}
+
+
+

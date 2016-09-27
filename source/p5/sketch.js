@@ -41,7 +41,7 @@ function setup() {
     originalCanvasHeight = 948;
   }else{ // mobile
     var image_x = 300;
-    var image_y = 1050;
+    var image_y = 1300;
     var list_image_x = [180, 180, 180, 180];
 
     originalCanvasWidth = 948;
@@ -76,7 +76,7 @@ function draw() {
 
   }else{ // mobile
     var image_x = 300;
-    var image_y = 1050;
+    var image_y = 1300;
     var list_image_x = [180, 180, 180, 180];
 
     originalCanvasWidth = 948;
@@ -125,15 +125,16 @@ function draw() {
 
 
 function displayImage(){
+  var y_position_on_page = 350;
 
   imageMode(CENTER);
   if (windowWidth > 768){//desktop
       image(img_list[increment], scalingPositionDesktop(img_list[increment],400).x, scalingPositionDesktop(img_list[increment],400).y, scalingDesktop(img_list[increment]).x, scalingDesktop(img_list[increment]).y);
   }else{
     if (windowHeight > 610){
-     image(img_list[increment], 165, scalingPosition(img_list[increment],1050).y, scaling(img_list[increment]).x, scaling(img_list[increment],1050).y);
+     image(img_list[increment], 165, scalingPosition(img_list[increment],1300).y, scaling(img_list[increment]).x, scaling(img_list[increment],1300).y);
     } else{
-     image(img_list[increment], 165, 330, scaling(img_list[increment]).x, scaling(img_list[increment],1050).y);
+     image(img_list[increment], 165, y_position_on_page, scaling(img_list[increment]).x, scaling(img_list[increment],1300).y);
     };
 
 
@@ -165,9 +166,10 @@ function scalingPosition(img, image_y){
 }
 
 function initiateShapes(posX){
+  var y_position_on_page = 350;
   for(var i=0; i<=numberShapesInitial; i++){
     var shapeNumber = int(random(2));
-    randomShape[i] = new randomShape(random(posX-widthEpicentre,posX+widthEpicentre),random(scalingPosition(img_list[increment],1050).y-widthEpicentre,scalingPosition(img_list[increment],1050).y+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
+    randomShape[i] = new randomShape(random(posX-widthEpicentre,posX+widthEpicentre),random(y_position_on_page-widthEpicentre,y_position_on_page+widthEpicentre),random(0,10000),random(0,10000),shapeNumber);
   }
 }
 

@@ -1,17 +1,17 @@
 fr:
   navbar:
     haveacoffeewithus: "PRENDRE UN CAFE AVEC NOUS"
-    what: "POURQUOI?"
-    how: "COMMENT?"
+    what: "POURQUOI ?"
+    how: "COMMENT ?"
     team: "L'EQUIPE"
     contact: "CONTACT"
     languages: "fr"
     other_languages_1: "en"
     link_to_other_languages_1: "/index.html"
   landingpage:
-    two_simple_elements1: "TWO SIMPLE ELEMENTS TO "
-    two_simple_elements2: "BUILD YOU AWESOME WEBSITES"
-    coffee?: "COFFEE? WHY COFFEE?"
+    two_simple_elements1: "DEUX ELEMENTS SIMPLES POUR VOUS "
+    two_simple_elements2: "DEVELOPPER UNE SUPER APPLICATION WEB"
+    coffee?: "MAIS POURQUOI UN CAFE ?"
   solution:
     projectstarts1: "Tout bon projet commence"
     projectstarts2: "autour d'un café"

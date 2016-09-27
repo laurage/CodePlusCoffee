@@ -9,7 +9,7 @@ en:
     contact: "CONTACT"
     languages: "en"
     other_languages_1: "fr"
-    link_to_other_languages_1: "/fr/index.html"
+    link_to_other_languages_1: "/index.html"
   landingpage:
     two_simple_elements1: "TWO SIMPLE ELEMENTS TO "
     two_simple_elements2: "BUILD YOU AWESOME WEBSITES"

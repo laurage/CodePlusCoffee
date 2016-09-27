@@ -2,7 +2,7 @@
 # Compass
 ###
 # INTERNATIONALIZATION
-activate :i18n
+activate :i18n, :mount_at_root => :fr
 
 # Change Compass configuration
 # compass_config do |config|

@@ -64,6 +64,7 @@ br {
      .device-small{display:block;}
 
      h1{
+      padding-top: 20px;
        font-size: 110px; //font-size: 25vw;
      }
      h2{
@@ -92,6 +93,7 @@ br {
      p{background-color: red;}
      .device-large{display:none;}
      .device-small{display:block;}
+     padding-top: 20px;
   }
 
   @media (min-width: $screen-md-min) {

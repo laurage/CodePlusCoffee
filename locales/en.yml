@@ -2,7 +2,7 @@
 en:
   # TODO
   navbar:
-    haveacoffeewithus: "HAVE A COFFEE WITH US"
+    haveacoffeewithus: "LET'S MEET FOR A COFFEE"
     what: "WHAT?"
     how: "HOW?"
     team: "TEAM"
@@ -18,12 +18,12 @@ en:
     projectstarts1: "Every great project"
     projectstarts2: "starts with a coffee"
     projectstops: "80% of web development projects fail because of poor project definition."
-    discuss1: "At code+coffee, we make sure that we start by discussing around a cup and "
-    discuss2: "we define together your project's requirements."
+    discuss1: "At code+coffee, we make sure that we "
+    discuss2: "discuss your project's requirements around a cup of coffee."
     accompany1: "Throughout the project, we work hand in hand to"
-    accompany2: " make your project happen."
+    accompany2: " make your project a success."
     meet: "LET'S MEET AROUND A COFFEE"
-    appointment: "BOOK A MEETING - 2 FREE HOURS"
+    appointment: "BOOK A MEETING - The first two hours are on us"
   philo:
     workwithus: "Working with us means"
     finalqualityh2: "To ensure // S'assurer de la qualité finale"
@@ -46,8 +46,8 @@ en:
     testsp2: "Continuous déploiement of each developed modules"
   process:
     processclair: "A clear and well defined process, without surprises"
-    rdvh2a: "1. Meeting to define your need"
-    rdvh2b: " 2h - Free"
+    rdvh2a: "1. Meeting to define your needs"
+    rdvh2b: " 2hrs - Free"
     rdvp1: "  Definition of the core functionalities of your website"
     rdvp2: "  Advice on technologies to use"
     rdvp3: "  First estimation of the quote"

@@ -1,7 +1,8 @@
 <!-- navbar scrolable mobile -->
 <div class="device-small">
-<!-- dropdown language -->
-  <div class="dropdown in-line navbar-scrolable-mobile">
+  <!-- dropdown language -->
+  <div class="dropdownnavbar-scrolable-mobile">
+
     <button class="dropdown-toggle no-btn-decoration-language" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       <%= t "navbar.languages" %>
       <span class="caret"></span>
@@ -9,8 +10,11 @@
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
       <li><a href="<%= t "navbar.link_to_other_languages_1" %>"><%= t "navbar.other_languages_1" %></a></li>
     </ul>
-<!-- logo -->
-    <img class = "in-line js-navbar-btn-logo" src="/images/logo_color7_transparent.svg" alt="logo codepluscoffee" width="70">
+
+    <!-- logo -->
+    <div class="logo-mobile">
+      <img class = "js-navbar-btn-logo" src="/images/logo_color7_transparent.svg" alt="logo codepluscoffee" width="70">
+    </div>
   </div>
 </div>
 

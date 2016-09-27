@@ -87,7 +87,7 @@ function draw() {
   }
 
   background(230,231,232);
-  //background(255,0,0);
+  background(255,0,0);
 
   displayImage();
 

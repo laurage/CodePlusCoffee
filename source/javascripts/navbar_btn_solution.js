@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   // btn logo
-  $(".navbar_btn_logo").click(function(event) {
-    console.log("click on navbar_btn_logo");
+  $(".js-navbar-btn-logo").click(function(event) {
+    console.log("click on js-navbar-btn-logo");
     $('html, body').animate({
       scrollTop: $(".head_of_landingpage").offset().top
        - 100}, 1000);

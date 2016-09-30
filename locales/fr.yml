@@ -9,9 +9,9 @@ fr:
     other_languages_1: "en"
     link_to_other_languages_1: "/en/index.html"
   landingpage:
-    two_simple_elements1: "TWO SIMPLE ELEMENTS TO "
-    two_simple_elements2: "BUILD YOU AWESOME WEBSITES"
-    coffee?: "COFFEE? WHY COFFEE?"
+    two_simple_elements1: "Les deux ingrédients pour "
+    two_simple_elements2: "vous développer de superbes sites web"
+    coffee?: "Du café? Mais pourquoi?"
   solution:
     projectstarts1: "Tout bon projet commence"
     projectstarts2: "autour d'un café"

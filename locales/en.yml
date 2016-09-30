@@ -75,9 +75,10 @@ en:
     maintenanceh2b: " - Optional"
   about:
     team: "Meet the team"
+    name1: "Hugo Barthélémy"
     paragraph1a: "Each team member has many years of experience managing tech projects."
     paragraph1b: ""
-    paragraph1c: ""
+    name2: "Laura Pedroni"
     paragraph2a: "This inputs into our work and allows us to meet the needs of the companies we work with"
     paragraph2b: ""
   contact:

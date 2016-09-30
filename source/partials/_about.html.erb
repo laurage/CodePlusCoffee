@@ -1,10 +1,27 @@
-<div id="title_about" class="half-height-page uppercasing">
+<div id="title_about" class="half-height-page">
   <div class="container">
     <div class="row">
-      <div class="col-xs-10 col-md-8 col-xs-offset-1">
+      <div class="col-xs-10 col-xs-offset-1">
         <h1><%= t "about.team" %></h1>
-        <p><%= t "about.paragraph1a" %></br><%= t "about.paragraph1b" %><span class="highlight"><%= t "about.paragraph1c" %></span></p>
-        <p><%= t "about.paragraph2a" %><span class="highlight"><%= t "about.paragraph2b" %></span>.</p>
+
+        <div class="about-content">
+
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <%= image_tag("team-01.svg", :alt => "laura from CodePlusCoffee") %>
+              <p class="uppercasing"><%= t "about.name1" %></p>
+              <p><%= t "about.paragraph1a" %></p>
+              <p><%= t "about.paragraph1b" %></p>
+
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <%= image_tag("team-02.svg", :alt => "laura from CodePlusCoffee") %>
+              <p class="uppercasing"><%= t "about.name2" %></p>
+              <p><%= t "about.paragraph2a" %></p>
+              <p><%= t "about.paragraph2b" %></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

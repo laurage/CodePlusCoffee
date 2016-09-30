@@ -377,5 +377,15 @@ canvas {
   z-index: 3;
 }
 
-
-
+.about-content{
+  text-align: center;
+  img{
+    border-radius: 50%;
+    width:60%;
+    height: auto;
+  }
+  .uppercasing{
+    padding-top: 20px;
+    text-transform: uppercase;
+  }
+}

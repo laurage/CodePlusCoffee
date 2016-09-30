@@ -60,14 +60,6 @@ configure :build do
   # For example, change the Compass output style for deployment
   # activate :minify_css
 
-  # favicon maker
-  activate :favicon_maker, :icons => {
-    "_favicon_template.png" => [
-      { icon: "apple-touch-icon-152x152-precomposed.png" },
-      { icon: "apple-touch-icon-114x114-precomposed.png" },
-      { icon: "apple-touch-icon-72x72-precomposed.png" },
-    ]
-  }
   # Minify Javascript on build
   # activate :minify_javascript
 

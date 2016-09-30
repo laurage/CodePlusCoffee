@@ -73,11 +73,12 @@ fr:
     maintenanceh2b: " En option"
   about:
     team: "L'équipe"
-    paragraph1a: "En plus de ses compétences en développement, chaque membre de l'équipe a "
-    paragraph1b: "de nombreuses années d'expérience en "
-    paragraph1c: "gestion de projets technologiques"
-    paragraph2a: "Cela a permis à notre équipe de développer une méthodologie au plus près des besoins des "
-    paragraph2b: "porteurs de projet innovants"
+    name1: "Hugo Barthélémy"
+    paragraph1a: "Vieux loup de mer et développeur expert, Hugo carbure au café et aux bons petits plats bien préparés. "
+    paragraph1b: "Ancien contrôleur en qualité, il s'assure que les projets de Code+Coffee ne débordent pas d'une goutte."
+    name2: "Laura Pedroni"
+    paragraph2a: "Bidouilleuse rêveuse qui a pourtant bien la tête sur les épaules, Laura gère depuis quatre ans une entreprise qui réalise des objets connectés innovants."
+    paragraph2b: "Chez Code+Coffee, elle s'occupe du prototypage des applications webs et assure la création d'expériences utilisateur fluides et agréables."
   contact:
     contact: 'contact'
     hello: 'Salut'

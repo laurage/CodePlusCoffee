@@ -25,6 +25,18 @@ en:
     meet: "LET'S MEET AROUND A COFFEE"
     appointment1: "BOOK A MEETING"
     appointment2: "First two hours free!"
+    modal:
+      title: "TODO - trad : Discutons de votre projet"
+      placeholdername: "First & Last name"
+      bestcontact: "TODO - trad : Indiquez-nous le meilleur moyen de vous contacter:"
+      placeholderemail: "Email"
+      emailhelp: "We'll never share your email and phone number with anyone else."
+      phonenumber: "Phone number"
+      yourproject: "Your project:"
+      placeholderyourproject: "Tell us about your project"
+      blabla1: "TODO - trad : Nous vous recontacterons dès que possible afin de discuter plus en détail de votre projet."
+      blabla2: "TODO - trad : A l'issue de ce rapide entretien, nous conviendrons ensemble d'une date pour discuter pendant 2 heures de votre projet, gratuitement."
+      btnsend: "TODO - trad : Envoyez votre demande de rendez-vous"
   philo:
     workwithus: "Working with us"
     finalqualityh2: "To meet the highest quality standards"

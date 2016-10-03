@@ -23,6 +23,18 @@ fr:
     meet: "RENCONTRONS NOUS AUTOUR D’UN CAFÉ"
     appointment1: "PRENEZ RDV - 2H GRATUITES"
     appointment2: ""
+    modal:
+      title: "Discutons de votre projet"
+      placeholdername: "Nom & prénom"
+      bestcontact: "Indiquez-nous le meilleur moyen de vous contacter:"
+      placeholderemail: "Email"
+      emailhelp: "Nous ne partagerons jamais votre email et votre numéro de téléphone."
+      phonenumber: "Numéro de téléphone"
+      yourproject: "Votre projet :"
+      placeholderyourproject: "Parlez nous de votre projet"
+      blabla1: "Nous vous recontacterons dès que possible afin de discuter plus en détail de votre projet."
+      blabla2: "A l'issue de ce rapide entretien, nous conviendrons ensemble d'une date pour discuter pendant 2 heures de votre projet, gratuitement."
+      btnsend: "Envoyez votre demande de rendez-vous"
   philo:
     workwithus: "Travailler avec nous, c'est"
     finalqualityh2: "S'assurer de la qualité finale"

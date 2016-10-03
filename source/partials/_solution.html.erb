@@ -40,40 +40,40 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" id="myModalLabel">Discutons de votre projet</h4>
+        <h4 class="modal-title" id="myModalLabel"><%= t "modal.title"%></h4>
       </div>
       <div class="modal-body">
 
         <form action="https://www.enformed.io/9nwccqfj" method="POST" id="contact_form"  >
 
           <div class="form-group">
-            <input type="text" id="name" name="Name" placeholder="First & Last name" class="form-control"/>
+            <input type="text" id="name" name="Name" placeholder="<%= t "modal.name"%>"" class="form-control"/>
           </div>
 
           <div class="form-group">
-            <p>Indiquez-nous le meilleur moyen de vous contacter:</p>
-            <input type="text" id="phone" name="Phone" placeholder="Phone number" class="form-control"/>
+            <p><%= t "modal.howtocontact"%></p>
+            <input type="text" id="phone" name="Phone" placeholder="<%= t "modal.phonenumber"%>" class="form-control"/>
           </div>
 
           <div class="form-group">
-            <input type="email" name="Email" class="form-control" aria-describedby="emailHelp" placeholder="Email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email and phone number with anyone else.</small>
+            <input type="email" name="Email" class="form-control" aria-describedby="emailHelp" placeholder="<%= t "modal.email"%>">
+                <small id="emailHelp" class="form-text text-muted"><%= t "modal.emailnotshared"%></small>
           </div>
 
           <div class="form-group">
-            <p>Your project:</p>
-            <textarea id="msg" name="Project" placeholder="Tell us about your project" class="form-control" rows="3"></textarea>
+            <p><%= t "modal.project"%></p>
+            <textarea id="msg" name="Project" placeholder="<%= t "modal.tellus"%>" class="form-control" rows="3"></textarea>
           </div>
 
-          <p>Nous vous recontacterons dès que possible afin de discuter plus en détail de votre projet.</p>
-          <p>A l'issue de ce rapide entretien, nous conviendrons ensemble d'une date pour discuter pendant 2 heures de votre projet, gratuitement.</p>
+          <p><%= t "modal.recontact"%></p>
+          <p><%= t "modal.meeting"%></p>
       </div>
         </form>
 
 
 
       <div class="modal-footer">
-        <button type="submit" class="btn btn-primary btn_submit">Envoyez votre demande de rendez-vous</button>
+        <button type="submit" class="btn btn-primary btn_submit"><%= t "modal.buttonrdv"%></button>
       </div>
     </div>
   </div>

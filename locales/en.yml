@@ -85,3 +85,19 @@ en:
     contact: 'contact'
   footer:
     powered: "Powered by "
+  modal:
+    title: "Let's speak about your project"
+    name: "First & Last name"
+    howtocontact: "What's the best way to contact you?"
+    phonenumber: "Phone number"
+    email: "Email"
+    emailnotshared: "We'll never share your email and phone number with anyone else."
+    project: "Your project:"
+    tellus: "Tell us about your project"
+    recontact: "We will contact you asap to discuss your project more in detail."
+    meeting: "After this first introduction, we'll decide together of the opportunity for a second more in-depth discussion during 2 hours, for free."
+    buttonrdv: "Send"
+
+
+
+

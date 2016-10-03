@@ -84,4 +84,15 @@ fr:
     hello: 'Salut'
   footer:
     powered: "Powered by "
-
+  modal:
+    title: "Discutons de votre projet"
+    name: "Prénom et nom"
+    howtocontact: "Indiquez-nous le meilleur moyen de vous contacter:"
+    phonenumber: "Numéro de téléphone"
+    email: "Email"
+    emailnotshared: "Nous ne partagerons jamais votre mail et téléphone avec qui que ce soit d'autre."
+    project: "Votre projet:"
+    tellus: "Dites nous en plus au sujet de votre projet."
+    recontact: "Nous vous recontacterons dès que possible afin de discuter plus en détail de votre projet."
+    meeting: "A l'issue de ce rapide entretien, nous conviendrons ensemble d'une date pour discuter pendant 2 heures de votre projet, gratuitement."
+    buttonrdv: "Envoyez votre demande de rendez-vous"

@@ -11,7 +11,7 @@ $( document ).ready(function() {
   $(".navbar_btn_solution").click(function(event) {
     console.log("click on navbar_btn_solution");
     $('html, body').animate({
-      scrollTop: $("#title_solution").offset().top
+      scrollTop: $("#title_solution").offset().top-50
       }, 1000);
   });
 
@@ -19,15 +19,16 @@ $( document ).ready(function() {
   $(".navbar_btn_process").click(function(event) {
     console.log("click on navbar_btn_process");
     $('html, body').animate({
-      scrollTop: $("#title_process").offset().top
+      scrollTop: $("#title_process").offset().top-50
       }, 1000);
   });
+
 
   // btn philo
   $(".navbar_btn_philo").click(function(event) {
     console.log("click on navbar_btn_philo");
     $('html, body').animate({
-      scrollTop: $("#title_philo").offset().top
+      scrollTop: $("#title_philo").offset().top-50
       }, 1000);
   });
 
@@ -35,7 +36,7 @@ $( document ).ready(function() {
   $(".navbar_btn_about").click(function(event) {
     console.log("click on navbar_btn_about");
     $('html, body').animate({
-      scrollTop: $("#title_about").offset().top
+      scrollTop: $("#title_about").offset().top-50
       }, 1000);
   });
 

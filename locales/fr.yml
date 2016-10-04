@@ -83,5 +83,7 @@ fr:
     contact: 'contact'
     hello: 'Salut'
   footer:
+    legalnoticelink: "/legalnotice.html"
+    legalnoticelinktext: "Mentions légales"
     powered: "Powered by "
 

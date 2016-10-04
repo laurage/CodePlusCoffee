@@ -84,4 +84,6 @@ en:
   contact:
     contact: 'contact'
   footer:
+    legalnoticelink: "/en/legalnotice.html"
+    legalnoticelinktext: "Legal notice"
     powered: "Powered by "

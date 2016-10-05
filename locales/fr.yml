@@ -96,3 +96,11 @@ fr:
     hello: 'Salut'
   footer:
     powered: "Powered by "
+    btnmodal: "Mentions légales"
+    legalnoticemodal:
+      modalheader: "Mentions légales"
+      textmodal: "TODO : blabla"
+      btnclose: "Fermer la fenêtre"
+
+
+

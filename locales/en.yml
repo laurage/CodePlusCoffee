@@ -97,6 +97,11 @@ en:
     contact: 'contact'
   footer:
     powered: "Powered by "
+    btnmodal: "Legal notice"
+    legalnoticemodal:
+      modalheader: "Legal notice"
+      textmodal: "TODO : Foo"
+      btnclose: "Close"
 
 
 

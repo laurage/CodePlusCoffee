@@ -99,7 +99,14 @@ fr:
     btnmodal: "Mentions légales"
     legalnoticemodal:
       modalheader: "Mentions légales"
-      textmodal: "TODO : blabla"
+      1erh1: "Ce site Web est édité par :"
+      status: "Société en cours de constitution"
+      siege: "Siège social : "
+      host: "Hébergeur"
+      statushost: "Société par Actions Simplifiée au capital de"
+      credits: "Crédits"
+      conception: "Conception & réalisation : CodePlusCoffee"
+      pictures: "Photos & desseins : CodePlusCoffee"
       btnclose: "Fermer la fenêtre"
 
 

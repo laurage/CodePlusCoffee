@@ -100,7 +100,15 @@ en:
     btnmodal: "Legal notice"
     legalnoticemodal:
       modalheader: "Legal notice"
-      textmodal: "TODO : Foo"
+      1erh1: "TODO - Ce site Web est édité par :"
+      status: "TODO - Société en cours de constitution"
+      siege: "TODO - Siège social : "
+      host: "TODO - Hébergeur"
+      statushost: "TODO - Société par Actions Simplifiée au capital de"
+      credits: "TODO - Crédits"
+      conception: "TODO - Conception & réalisation : CodePlusCoffee"
+      pictures: "TODO - Photos & desseins : CodePlusCoffee"
+      btnclose: "TODO - Fermer la fenêtre"
       btnclose: "Close"
 
 

@@ -99,15 +99,12 @@ fr:
     btnmodal: "Mentions légales"
     legalnoticemodal:
       modalheader: "Mentions légales"
-      1erh1: "Ce site Web est édité par :"
-      status: "Société en cours de constitution"
+      1erh1: "Ce site Web est édité par : CodePlusCoffee"
+      status: "Limited company au capital de"
       siege: "Siège social : "
-      host: "Hébergeur"
+      host: "Hébergeur: Gandi ()"
       statushost: "Société par Actions Simplifiée au capital de"
       credits: "Crédits"
       conception: "Conception & réalisation : CodePlusCoffee"
-      pictures: "Photos & deseins : CodePlusCoffee"
+      pictures: "Photos & dessins : CodePlusCoffee"
       btnclose: "Fermer la fenêtre"
-
-
-

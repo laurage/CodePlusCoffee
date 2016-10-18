@@ -25,6 +25,18 @@ en:
     meet: "LET'S MEET AROUND A COFFEE"
     appointment1: "BOOK A MEETING"
     appointment2: "First two hours free!"
+    modal:
+      title: "Let's speak about your project"
+      name: "First & Last name"
+      howtocontact: "What's the best way to contact you?"
+      phonenumber: "Phone number"
+      email: "Email"
+      emailnotshared: "We'll never share your email and phone number with anyone else."
+      project: "Your project:"
+      tellus: "Tell us about your project"
+      recontact: "We will contact you asap to discuss your project more in detail."
+      meeting: "After this first introduction, we'll decide together of the opportunity for a second more in-depth discussion during 2 hours, for free."
+      buttonrdv: "Send"
   philo:
     workwithus: "Working with us"
     finalqualityh2: "To meet the highest quality standards"
@@ -85,18 +97,19 @@ en:
     contact: 'contact'
   footer:
     powered: "Powered by "
-  modal:
-    title: "Let's speak about your project"
-    name: "First & Last name"
-    howtocontact: "What's the best way to contact you?"
-    phonenumber: "Phone number"
-    email: "Email"
-    emailnotshared: "We'll never share your email and phone number with anyone else."
-    project: "Your project:"
-    tellus: "Tell us about your project"
-    recontact: "We will contact you asap to discuss your project more in detail."
-    meeting: "After this first introduction, we'll decide together of the opportunity for a second more in-depth discussion during 2 hours, for free."
-    buttonrdv: "Send"
+    btnmodal: "Legal notice"
+    legalnoticemodal:
+      modalheader: "Legal notice"
+      1erh1: "Website edited by Incidence Ltd."
+      status: "TODO - Société en cours de constitution"
+      siege: "Registered office address:  "
+      host: "Host: Gandi"
+      statushost: "TODO - Société par Actions Simplifiée au capital de"
+      credits: "Credits"
+      conception: "Design and Development : CodePlusCoffee"
+      pictures: "TODO - Photos & desseins : CodePlusCoffee"
+      btnclose: "TODO - Fermer la fenêtre"
+      btnclose: "Close"
 
 
 

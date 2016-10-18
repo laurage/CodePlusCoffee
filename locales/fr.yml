@@ -1,4 +1,11 @@
 fr:
+  meta:
+    google:
+      title: "Code + Coffee - Accompagne et réalise vos projets web"
+      content: "Code + Coffee accompagne pas à pas les porteurs de projets, de la formalisation design et technique de leur idée à son développement web."
+    facebook:
+      title: "Code + Coffee - Accompagne et réalise vos projets web"
+      content: "Code + Coffee accompagne pas à pas les porteurs de projets, de la formalisation design et technique de leur idée à son développement web."
   navbar:
     haveacoffeewithus: "PRENDRE UN CAFE AVEC NOUS"
     what: "POURQUOI?"

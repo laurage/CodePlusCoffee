@@ -1,6 +1,12 @@
 ---
 en:
-  # TODO
+  meta:
+    google:
+      title: "Code + Coffee - Accompagne et réalise vos projets web"
+      content: "Code + Coffee accompagne pas à pas les porteurs de projets, de la formalisation design et technique de leur idée à son développement web."
+    facebook:
+      title: "Code + Coffee - Builds web platforms"
+      content: "Code + Coffee works hand in hand with its clients to formalise their web projects and develop them, from idea to production."
   navbar:
     haveacoffeewithus: "LET'S MEET FOR A COFFEE"
     what: "WHAT?"

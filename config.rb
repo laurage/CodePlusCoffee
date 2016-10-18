@@ -4,6 +4,9 @@
 # INTERNATIONALIZATION
 activate :i18n, :mount_at_root => :fr
 
+# to add if we want to force the first language to appear to be french:
+# :mount_at_root => :fr
+
 # Change Compass configuration
 # compass_config do |config|
 #   config.output_style = :compact

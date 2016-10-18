@@ -340,6 +340,11 @@ canvas {
   justify-content: flex-end;
 }
 
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+}
+
 // .flex-start {
 //   justify-content: flex-start;
 // }

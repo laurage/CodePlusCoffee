@@ -2,9 +2,9 @@
 # Compass
 ###
 # INTERNATIONALIZATION
-activate :i18n, :mount_at_root => :fr
+activate :i18n, :mount_at_root => false
 
-# to add if we want to force the first language to appear to be french:
+# to put if we want to force the first language to appear to be french:
 # :mount_at_root => :fr
 
 # Change Compass configuration

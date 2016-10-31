@@ -107,9 +107,10 @@ fr:
     legalnoticemodal:
       modalheader: "Mentions légales"
       1erh1: "Ce site Web est édité par : CodePlusCoffee"
-      status: "Limited company au capital de"
+      trading: "exerçant sous le nom de"
+      status: "Limited company au capital de départ de"
       siege: "Siège social : "
-      host: "Hébergeur: Gandi ()"
+      host: "Hébergeur: Gandi"
       statushost: "Société par Actions Simplifiée au capital de"
       credits: "Crédits"
       conception: "Conception & réalisation : CodePlusCoffee"

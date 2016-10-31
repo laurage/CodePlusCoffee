@@ -106,15 +106,16 @@ en:
     btnmodal: "Legal notice"
     legalnoticemodal:
       modalheader: "Legal notice"
-      1erh1: "Website edited by Incidence Ltd."
-      status: "TODO - Société en cours de constitution"
+      1erh1: "Website created by Incidence Ltd."
+      trading: "trading as"
+      status: "Limited Company incorporated with a capital of"
       siege: "Registered office address:  "
-      host: "Host: Gandi"
-      statushost: "TODO - Société par Actions Simplifiée au capital de"
+      host: "Host:"
+      statushost: "Société par Actions Simplifiée with a capital of"
       credits: "Credits"
       conception: "Design and Development : CodePlusCoffee"
-      pictures: "TODO - Photos & desseins : CodePlusCoffee"
-      btnclose: "TODO - Fermer la fenêtre"
+      pictures: "Pictures and drawings : CodePlusCoffee"
+      btnclose: "Close this window"
       btnclose: "Close"
 
 

@@ -30,7 +30,7 @@ en:
     accompany2: " make your project a success."
     meet: "LET'S MEET AROUND A COFFEE"
     appointment1: "BOOK A MEETING"
-    appointment2: "First two hours free!"
+    appointment2: "First hour free!"
     modal:
       title: "Let's speak about your project"
       name: "First & Last name"
@@ -41,7 +41,7 @@ en:
       project: "Your project:"
       tellus: "Tell us about your project"
       recontact: "We will contact you asap to discuss your project more in detail."
-      meeting: "After this first introduction, we'll decide together of the opportunity for a second more in-depth discussion during 2 hours, for free."
+      meeting: "After this first introduction, we'll decide together of the opportunity for a second more in-depth discussion during one hour, for free."
       buttonrdv: "Send"
   philo:
     workwithus: "Working with us"

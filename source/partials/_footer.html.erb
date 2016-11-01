@@ -1,12 +1,13 @@
-<div class="footer-navbar-container footer flex-space-between">
-  <!-- ref to the modal -->
-  <p class="text-center"><a data-toggle="modal" data-target="#LegalNoticeModal" role="button"><%= t "footer.btnmodal"%></a></p>
 
+<div class="footer-navbar-container footer text-center padding-10">
+
+<!-- ref to the modal -->
+  <div ><a data-toggle="modal" data-target="#LegalNoticeModal" role="button"><%= t "footer.btnmodal"%></a></div>
   <!-- Incidence.io -->
-  <p><%= t "footer.powered" %><%= link_to "Incidence.io", "http://incidence.io", :target => "_blank" %></p>
+  <div ><%= t "footer.powered" %><%= link_to "Incidence.io", "http://incidence.io", :target => "_blank" %></div>
 
 </div>
-
+<!-- flex-space-around -->
 
 <!-- Modal -->
   <div class="modal fade" id="LegalNoticeModal" role="dialog">

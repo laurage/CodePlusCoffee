@@ -65,7 +65,7 @@ fr:
   process:
     processclair: "UN PROCESSUS CLAIR ET PRécis, Sans surprise"
     rdvh2a: "1. Rendez-vous de définition du besoin"
-    rdvh2b: " 2h - Gratuit"
+    rdvh2b: " 1h - Gratuit"
     rdvp1: "  Définition des fonctionnalités principales"
     rdvp2: "  Conseil sur les technologies à utiliser"
     rdvp3: "  Première estimation de devis"
@@ -90,6 +90,7 @@ fr:
     optimisationh2b: "En option"
     maintenanceh2a: "8. Maintenance"
     maintenanceh2b: " En option"
+    indicativePrices: "* Prix indicatifs, susceptibles de changer sans préavis *"
   about:
     team: "L'équipe"
     name1: "Hugo Barthélémy"

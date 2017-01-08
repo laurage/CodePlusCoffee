@@ -1,7 +1,7 @@
 #CODE+COFFEE
 
-![image code+coffee](https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffee.jpg =500x100)
-<img src="https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffee.jpg" alt="code+coffee" style="width: 200px;"/>
+![image code+coffee](https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffe)
+<img src="https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffee.jpg" alt="code+coffee" style="width: 50px;"/>
 
 ##Introduction
 

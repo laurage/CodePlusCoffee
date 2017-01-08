@@ -1,7 +1,6 @@
 #CODE+COFFEE
 
-![image code+coffee](https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffe)
-<img src="https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffee.jpg" alt="code+coffee" style="width: 50px;"/>
+![image code+coffee](https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffee_small.jpg)
 
 ##Introduction
 

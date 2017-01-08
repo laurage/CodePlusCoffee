@@ -1,6 +1,6 @@
 #CODE+COFFEE
 
-![image code+coffee](https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffee.jpg)
+![image code+coffee](https://github.com/laurage/CodePlusCoffee/blob/master/CodeplusCoffee.jpg = 100x)
 
 ##Introduction
 
